@@ -1,0 +1,19 @@
+{
+  "name": "pprocess",
+  "description": "pprocess is a php process manager",
+  "type": "CLI",
+  "authors": [
+    {
+      "name": "chengxueming"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PProcess\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
