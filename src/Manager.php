@@ -101,6 +101,7 @@ class Manager implements IManager {
         pcntl_signal(SIGUSR2, array($this, "sigAction"));
         // 初始化子进程
         foreach ($this->taskGroups as $groupName => $task) {
+            $task->setMasterPid($this->masterPid);
             $startRet = $task->start();
             if($startRet == ITaskGroup::FORK_CHILD) {
                 $this->isParent = false;

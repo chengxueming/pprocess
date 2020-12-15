@@ -5,7 +5,7 @@
  * Date: 2020/12/12
  * Time: 9:43 AM
  */
-
+include './vendor/autoload.php';
 use PProcess\{
     Manager,
     TaskGroup
